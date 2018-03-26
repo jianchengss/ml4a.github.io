@@ -3,7 +3,7 @@ layout: chapter
 title: "신경망"
 includes: [mathjax, jquery, convnetjs, dataset, convnet, visualizer]
 header_image: "/images/headers/analytical_engine.jpg"
-header_text: "“과학에서 근본적이지만 아직 독립적인 요소이고 명확히 잘 정의된 분석 대상으로서, 수학적인 처리 과정이 무생물인 장치가 아니라 사람의 뇌를 통과할 때, 연산에 연관된 추론이 똑같은 곳에서 동등하게 필요하다는 것이 엔진 연구에 반드시 포함되어야 합니다.” <a href=\"https://books.google.de/books?id=b8YUDAAAQBAJ&pg=PA16&lpg=PA16\">해석 기관에 대한 스케치 (1843), 에이다 러브레이스</a>"
+header_text: "“수학적인 처리 과정이 무생물인 장치가 아니라 사람의 뇌를 통과할 때, 연산에 연관된 추론이 명확히 잘 정의된 분석의 주체가 되는 것이 동일하게 필요합니다. 이는 과학에서 근본적이지만 아직 독립적인 주제로서 엔진 연구에 반드시 포함되어야 합니다.” <a href=\"https://books.google.de/books?id=b8YUDAAAQBAJ&pg=PA16&lpg=PA16\">해석 기관에 대한 스케치 (1843), 에이다 러브레이스</a>"
 translator: "Haesun Park"
 translator_link: "https://tensorflow.blog/"
 ---
@@ -11,7 +11,8 @@ translator_link: "https://tensorflow.blog/"
 [English](/ml4a/neural_networks/)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[中文](/ml4a/cn/neural_networks/)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[español](/ml4a/es/neural_networks/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[french](/ml4a/fr/neural_networks/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[français](/ml4a/fr/neural_networks/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[日本語](/ml4a/jp/neural_networks/)
 
 신경망(neural network)이 처음 고안된 것은 거의 100여년 전으로 [에이다 러브레이스](http://findingada.com/)는 "[신경 시스템에 대한 수학 모델](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)00686-8/fulltext?rss=yes)"을 만들고자 하는 꿈을 가졌습니다. 뇌와 기계 사이의 추측성 비유는 계산 자체의 역사만큼이나 오래되었지만, 에이다의 선생님이었던 [찰스 배비지](https://ko.wikipedia.org/wiki/%EC%B0%B0%EC%8A%A4_%EB%B0%B0%EB%B9%84%EC%A7%80)가 [해석 기관](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%84%9D%EA%B8%B0%EA%B4%80)을 제안하기 전까지는 "계산기"를 사람같은 인지 능력을 가진 것으로 상상하지는 못했습니다. 그 당시 기술자들은 그녀가 고안한 복잡한 회로를 만들 능력이 없었기 때문에 에이다는 생전에 이 기관이 실제로 구현되는 것을 보지 못했습니다. 그럼에도 불구하고, 이 아이디어는 다음 세기를 거쳐 전달되었고 [앨런 튜링](https://ko.wikipedia.org/wiki/%EC%95%A8%EB%9F%B0_%ED%8A%9C%EB%A7%81)이 "[튜링 테스트](https://en.wikipedia.org/wiki/Turing_test)"이라고 불리게 된 [모방 게임](http://phil415.pbworks.com/f/TuringComputing.pdf)을 소개할 때 여기에서 영감을 받았다고 인용하였습니다. 극단적으로 단순한 계산에 대한 그의 고찰은 첫 번째 인공 지능의 붐을 촉발시켰고 신경망의 첫 번째 전성기를 마련하였습니다.
 
@@ -176,4 +177,4 @@ $$
 
 ## 다음 장
 
-다음 장 [신경망의 내부](/ml4a/looking_inside_neural_nets/)에서 네트워크의 내부 상태를 좀 더 자세히 분석해 보겠습니다. 어떤 종류의 정보를 감지하는 지에 대한 직관을 얻고, 기본 신경망의 단점으로부터 이어지는 장에서 배울 합성곱 층같은 보다 복잡한 기능을 소개하기 위한 발판을 만들어 보겠습니다.
+다음 장 [신경망의 내부](/ml4a/looking_inside_neural_nets/)에서 네트워크의 내부 상태를 좀 더 자세히 분석해 보겠습니다. 어떤 종류의 정보를 감지하는지 직관을 얻고, 기본 신경망의 단점은 무엇인지 알아 보겠습니다. 그리고 이를 통해 이어지는 장에서 배울 합성곱 층같이 더 복잡한 기능에 대한 동기를 얻을 것입니다.

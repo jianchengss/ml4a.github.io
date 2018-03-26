@@ -7,6 +7,8 @@ header_text: "Brainbow of postnatal mouse taken <a href=\"http://www.olympusbios
 ---
 
 [español](/ml4a/es/looking_inside_neural_nets/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[한국어](/ml4a/ko/looking_inside_neural_nets/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[日本語](/ml4a/jp/looking_inside_neural_nets/)
 
 In the [previous chapter](/ml4a/neural_networks), we saw how a neural network can be trained to classify handwritten digits with a respectable accuracy of around 90%. In this chapter, we are going to evaluate its performance a little more carefully, as well as examine its internal state to develop a few intuitions about what's really going on. Later in this chapter, we are going to break our neural network altogether by attempting to train it on a more complicated dataset of objects like dogs, automobiles, and ships, to try to anticipate what kinds of innovations will be necessary to take it to the next level.
  
@@ -34,7 +36,7 @@ Let's look at the weights learned for all 10 of the output neurons. As suspected
 
 {% include figure_multi.md path1="/images/figures/rolled_weights_mnist.png" caption1="Visualizing the weights for all the output neurons of an MNIST classifier" %}
 
-Suppose we receive an input from an image of a 2. We can anticipate that the neuron responsible for classifying 2s should have a high value because its weights are such that high weights tend to align with pixels tending to be high in 2s. For other neurons, _some_ of the weights will also line up with high-valued pixels, making their scores somewhat higher as well. However, there is much less overlap, and many of the high-valued pixels in those images will be negated by low weights in the 2 neuron. The activation function does not change this, because it is monotonic with respect to the input, that is, the higher the input, the higher the output.
+Suppose we receive an input from an image of a 2. We can anticipate that the neuron responsible for classifying 2s should have a high value because its weights are such that high weights tend to align with pixels tending to be high in 2s. For other neurons, _some_ of the weights will also line up with high-valued pixels, making their scores somewhat higher as well. However, there is much less overlap, and many of the high-valued pixels in those images will be negated by low weights in other neurons. The activation function does not change this, because it is monotonic with respect to the input, that is, the higher the input, the higher the output.
 
 We can interpret these weights as forming templates of the output classes. This is really fascinating because we never _told_ our network anything in advance about what these digits are or what they mean, yet they came to resemble those object classes anyway. This is a hint of what's really special about the internals of neural networks: they form _representations_ of the objects they are trained on, and it turns out these representations can be useful for much more than simple classification or prediction. We will take this representational capacity to the next level when we begin to study [convolutional neural networks](/ml4a/convnets/) but let's not get ahead of ourselves yet...
 
